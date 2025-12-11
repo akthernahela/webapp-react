@@ -4,3 +4,5 @@ import axios from 'axios';
 function HomePage() {
     return
 }
+
+export default HomePage;
