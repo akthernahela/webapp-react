@@ -12,13 +12,18 @@ function HomePage() {
     return (
         <>
             <div className="container">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                {movies.map(movie => (
+                    <div className="card mb-3" key={movie.id}>
+                        <div className="card-body">
+                            <h5 className="card-title">{movie.title}</h5>
+                            <p className="card-text">{movie.director}</p>
+                            <p className="card-text">{movie.genre}</p>
+                            <p className="card-text">
+                                <small className="text-body-secondary">{movie.release_year}</small>
+                            </p>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
         </>
     )
