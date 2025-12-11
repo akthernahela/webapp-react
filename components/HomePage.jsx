@@ -4,7 +4,11 @@ import axios from 'axios';
 function HomePage() {
     const [movies, setMovies] = useState([]);
     const urlMovies = 'http://localhost:3000/';
-
+    useEffect(() => {
+        axios.get(urlMovies).then(response => {
+            setMovies(response.data);
+        });
+    }, []);
     return (
         <>
             <div className="container">
