@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../components/HomePage';
 import MovieDetail from '../components/MovieDetail';
-import AppLayout from '../public/AppLayout'
+import AppLayout from '../layout/AppLayout'
 
 function App() {
-
 
   return (
     <>
