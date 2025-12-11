@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from '../components/HomePage';
+import MovieDetail from '../components/MovieDetail';
 
 function App() {
 
@@ -6,7 +8,7 @@ function App() {
   return (
     <>
 
-      <h1>WEBAPP</h1>
+
 
     </>
   )
