@@ -7,9 +7,12 @@ function App() {
 
   return (
     <>
-
-
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
