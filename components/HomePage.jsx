@@ -11,20 +11,22 @@ function HomePage() {
     }, []);
     return (
         <>
-            <div className="container">
-                {movies.map(movie => (
-                    <div className="card mb-3" key={movie.id}>
-                        <div className="card-body">
-                            <h5 className="card-title">{movie.title}</h5>
-                            <p className="card-text">{movie.director}</p>
-                            <p className="card-text">{movie.genre}</p>
-                            <p className="card-text">
-                                <small className="text-body-secondary">{movie.release_year}</small>
-                            </p>
+            <main>
+                <div className="container">
+                    {movies.map(movie => (
+                        <div className="card mb-3" key={movie.id}>
+                            <div className="card-body">
+                                <h5 className="card-title">{movie.title}</h5>
+                                <p className="card-text">{movie.director}</p>
+                                <p className="card-text">{movie.genre}</p>
+                                <p className="card-text">
+                                    <small className="text-body-secondary">{movie.release_year}</small>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </main>
         </>
     )
 }
