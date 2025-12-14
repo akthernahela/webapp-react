@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function HomePage() {
     const [movies, setMovies] = useState([]);
-    const urlMovies = 'http://localhost:3000/';
+    const urlMovies = 'http://localhost:3000/api/movies/';
     useEffect(() => {
         axios.get(urlMovies).then(response => {
             setMovies(response.data);
