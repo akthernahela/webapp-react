@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../components/HomePage';
 import MovieDetail from '../components/MovieDetail';
-import AppLayout from '../layout/AppLayout'
+import AppLayout from '../layout/AppLayout.jsx'
 
 function App() {
 
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
