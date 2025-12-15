@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../components/HomePage';
-import MovieDetail from '../components/MovieDetail';
+import MovieDetail from '../components/MovieDetail.jsx';
 import AppLayout from '../layout/AppLayout.jsx'
 
 function App() {

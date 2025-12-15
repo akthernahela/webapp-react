@@ -15,6 +15,7 @@ function HomePage() {
                 <div className="container">
                     {movies.map(movie => (
                         <div className="card mb-3" key={movie.id}>
+                            <img src={movie?.image} alt="" className="" />
                             <div className="card-body">
                                 <h5 className="card-title">{movie.title}</h5>
                                 <p className="card-text">{movie.director}</p>
