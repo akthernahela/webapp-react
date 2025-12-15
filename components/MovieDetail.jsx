@@ -20,22 +20,26 @@ function MovieDetail() {
     }
 
     return (
-        <div className="container">
-            <div className="card m-5" key={movie.id}>
-                <img className="h-25 w-25 m-5" src={`http://localhost:3000/images/${movie.image}`} alt='' />
-                <div className="card-body">
-                    <h5 className="card-title">{movie.title}</h5>
-                    <p className="card-text">{movie.director}</p>
-                    <p className="card-text">{movie.genre}</p>
-                    <p className="card-text">
-                        <small className="text-body-secondary">{movie.release_year}</small>
-                    </p>
-                    <Link className="btn btn-dark mt-auto" to="/">
-                        Tutti i film
-                    </Link>
+        <>
+            <div className="container">
+                <div className="card m-5" key={movie.id}>
+                    <img className="h-25 w-25 m-5" src={`http://localhost:3000/images/${movie.image}`} alt='' />
+                    <div className="card-body">
+                        <h5 className="card-title">{movie.title}</h5>
+                        <p className="card-text">{movie.director}</p>
+                        <p className="card-text">{movie.genre}</p>
+                        <p className="card-text">
+                            <small className="text-body-secondary">{movie.release_year}</small>
+                        </p>
+                        <Link className="btn btn-dark mt-auto" to="/">
+                            Tutti i film
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+            <hr />
+            <h3>Recensioni</h3>
+        </>
     );
 }
 
