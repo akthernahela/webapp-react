@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 function HomePage() {
     const [movies, setMovies] = useState([]);
@@ -14,7 +15,7 @@ function HomePage() {
             <main>
                 <div className="container">
                     {movies.map(movie => (
-                        <div className="card mb-3" key={movie.id}>
+                        <div className="card m-3" key={movie.id}>
                             <img src={movie?.image} alt="" className="" />
                             <div className="card-body">
                                 <h5 className="card-title">{movie.title}</h5>
