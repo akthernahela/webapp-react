@@ -36,9 +36,10 @@ function MovieDetail() {
                         </Link>
                     </div>
                 </div>
+                <hr />
+                <h3>Recensioni</h3>
+                {movie.reviews.length === 0 && <p>Nessuna recensione presente</p>}
             </div>
-            <hr />
-            <h3>Recensioni</h3>
         </>
     );
 }
