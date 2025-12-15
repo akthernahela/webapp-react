@@ -22,6 +22,7 @@ function MovieDetail() {
     return (
         <div className="container">
             <div className="card m-3" key={movie.id}>
+                <img src={`http://localhost:3000/images/${movie.image}`} alt='' />
                 <div className="card-body">
                     <h5 className="card-title">{movie.title}</h5>
                     <p className="card-text">{movie.director}</p>
