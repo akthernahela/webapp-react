@@ -1,17 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 function MovieDetail() {
 
     const { id } = useParams();
-    const [movie, setMovies] = useState([]);
+    const [movie, setMovie] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/api/movie/${id}`)
+        axios.get(`http://localhost:3000/api/movies/${id}`)
             .then(res => {
                 console.log(res.data);
-                setMovies(res.data);
+                setMovie(res.data);
             });
     }, [id]);
 
@@ -26,8 +26,8 @@ function MovieDetail() {
                     <p className="card-text">
                         <small className="text-body-secondary">{movie.release_year}</small>
                     </p>
-                    <Link className="btn btn-dark mt-auto" to={`/movie/${movie.id}`}>
-                        Recensione
+                    <Link className="btn btn-dark mt-auto" to="/">
+                        Tutti i film
                     </Link>
                 </div>
             </div>
