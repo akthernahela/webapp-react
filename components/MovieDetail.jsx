@@ -15,6 +15,10 @@ function MovieDetail() {
             });
     }, [id]);
 
+    if (!movie) {
+        return <div className="container">Caricamento...</div>;
+    }
+
     return (
         <div className="container">
             <div className="card m-3" key={movie.id}>
