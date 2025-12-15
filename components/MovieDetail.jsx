@@ -39,6 +39,14 @@ function MovieDetail() {
                 <hr />
                 <h3>Recensioni</h3>
                 {movie.reviews.length === 0 && <p>Nessuna recensione presente</p>}
+                {movie.reviews.length > 0 && movie.reviews.map(review => (
+                    <div className="card mb-5" key={review.id}>
+                        <div className="card-body">
+                            <h6>{review.name} - {review.vote}/5</h6>
+                            <p>{review.text}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     );
