@@ -32,7 +32,7 @@ export default function NewReview({ movieId, onReviewAdded }) {
                     </select>
                 </div>
                 <div className="row mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label" value={name} onChange={(event) => setName(event.target.value)}>Scrivi la tua esperienza</label>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label" value={text} onChange={(event) => setText(event.target.value)}>Scrivi la tua esperienza</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Pubblica</button>
