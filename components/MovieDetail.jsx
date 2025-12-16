@@ -49,6 +49,8 @@ function MovieDetail() {
                         </div>
                     </div>
                 ))}
+                <hr />
+                <NewReview movieId={movie.id} onReviewAdded={(review) => setMovie({ ...movie, reviews: movie.reviews.concat(review) })} />
             </div>
         </>
     );
