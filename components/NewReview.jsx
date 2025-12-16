@@ -21,14 +21,16 @@ export default function NewReview({ movieId, onReviewAdded }) {
                         <input type="text" className="form-control" id="inputName" />
                     </div>
                 </div>
-                <select className="form-select form-select-sm" aria-label="Small select example">
-                    <option selected>Vote</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="3">Three</option>
-                    <option value="3">Three</option>
-                </select>
+                <div className="row mb-3">
+                    <select className="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>Vote</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                    </select>
+                </div>
                 <div className="row mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Scrivi la tua esperienza</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
