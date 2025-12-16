@@ -9,6 +9,12 @@ export default function NewReview({ movieId, onReviewAdded }) {
     const [text, setText] = useState('');
     const handleSubmit = (event) => {
         event.preventDefault();
+        console.log({
+            movieId,
+            name,
+            vote,
+            text
+        });
     }
 
 
