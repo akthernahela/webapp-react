@@ -14,7 +14,16 @@ export default function NewReview({ movieId, onReviewAdded }) {
             name: name,
             vote: vote,
             text: text
+        }).then(res => {
+            console.log('Recensione salvata');
+            if (onReviewAdded) {
+                onReviewAdded(res.data);
+            }
+            setName('');
+            setVote(1);
+            setText('');
         })
+
     }
 
 
