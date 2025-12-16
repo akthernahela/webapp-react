@@ -14,14 +14,21 @@ export default function NewReview({ movieId, onReviewAdded }) {
 
     return (
         <>
-            <div className="mb-3">
-                <label for="formGroupExampleInput" className="form-label">Example label</label>
-                <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" />
-            </div>
-            <div className="mb-3">
-                <label for="formGroupExampleInput2" className="form-label">Another label</label>
-                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" />
-            </div>
+            <form>
+                <div className="row mb-3">
+                    <label for="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+                    <div className="col-sm-10">
+                        <input type="email" className="form-control" id="inputEmail3" />
+                    </div>
+                </div>
+                <div className="row mb-3">
+                    <label for="inputPassword3" className="col-sm-2 col-form-label">Password</label>
+                    <div className="col-sm-10">
+                        <input type="password" className="form-control" id="inputPassword3" />
+                    </div>
+                </div>
+                <button type="submit" className="btn btn-primary">Sign in</button>
+            </form>
         </>
     )
 }
