@@ -22,9 +22,9 @@ export default function NewReview({ movieId, onReviewAdded }) {
         <>
             <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
-                    <label htmlFor="inputName" className="col-sm-2 col-form-label" value={name} onChange={(event) => setName(event.target.value)}>Nome</label>
+                    <label htmlFor="inputName" className="col-sm-2 col-form-label">Nome</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" id="inputName" />
+                        <input type="text" className="form-control" id="inputName" value={name} onChange={(event) => setName(event.target.value)} />
                     </div>
                 </div>
                 <div className="row mb-3">
@@ -37,8 +37,8 @@ export default function NewReview({ movieId, onReviewAdded }) {
                     </select>
                 </div>
                 <div className="row mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label" value={text} onChange={(event) => setText(event.target.value)}>Scrivi la tua esperienza</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label" >Scrivi la tua esperienza</label>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={text} onChange={(event) => setText(event.target.value)}></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Pubblica</button>
             </form>
