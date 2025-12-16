@@ -22,7 +22,7 @@ export default function NewReview({ movieId, onReviewAdded }) {
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <select className="form-select form-select-sm" aria-label="Small select example">
+                    <select className="form-select form-select-sm" value={name} onChange={(event) => setName(event.target.value)} aria-label="Small select example">
                         <option selected>Vote</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -32,7 +32,7 @@ export default function NewReview({ movieId, onReviewAdded }) {
                     </select>
                 </div>
                 <div className="row mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Scrivi la tua esperienza</label>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label" value={name} onChange={(event) => setName(event.target.value)}>Scrivi la tua esperienza</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Pubblica</button>
