@@ -9,12 +9,12 @@ export default function NewReview({ movieId, onReviewAdded }) {
     const [text, setText] = useState('');
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log({
-            movieId,
-            name,
-            vote,
-            text
-        });
+        axios.post('http://localhost:3000/api/reviews', {
+            movie_id: movieId,
+            name: name,
+            vote: vote,
+            text: text
+        })
     }
 
 
