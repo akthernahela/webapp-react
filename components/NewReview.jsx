@@ -22,7 +22,7 @@ export default function NewReview({ movieId, onReviewAdded }) {
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <select className="form-select form-select-sm" value={name} onChange={(event) => setName(event.target.value)} aria-label="Small select example">
+                    <select className="form-select form-select-sm" value={vote} onChange={(event) => setVote(Number(event.target.value))} aria-label="Small select example">
                         <option selected>Vote</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
