@@ -16,13 +16,13 @@ export default function NewReview({ movieId, onReviewAdded }) {
         <>
             <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
-                    <label for="inputName" className="col-sm-2 col-form-label">Nome</label>
+                    <label htmlFor="inputName" className="col-sm-2 col-form-label">Nome</label>
                     <div className="col-sm-10">
                         <input type="text" className="form-control" id="inputName" />
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <label for="exampleFormControlTextarea1" className="form-label">Scrivi la tua esperienza</label>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Scrivi la tua esperienza</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Pubblica</button>
