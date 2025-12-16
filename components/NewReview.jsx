@@ -14,7 +14,7 @@ export default function NewReview({ movieId, onReviewAdded }) {
 
     return (
         <>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
                     <label for="inputName" className="col-sm-2 col-form-label">Nome</label>
                     <div className="col-sm-10">
