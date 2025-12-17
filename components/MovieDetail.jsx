@@ -12,8 +12,11 @@ function MovieDetail() {
     useEffect(() => {
         axios.get(`http://localhost:3000/api/movies/${id}`)
             .then(res => {
-                console.log(res.data);
-                setMovie(res.data);
+                //console.log(res.data);
+                setMovie({
+                    ...res.data,
+                    reviews: res.data.reviews || []
+                });
             });
     }, [id]);
 
